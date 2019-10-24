@@ -9,7 +9,7 @@ require 'faker'
 
 #creation de 10 users
 10.times do
-	User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.paragraph_by_chars, email: Faker::Internet.email, age: rand(0..99))
+	User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.paragraph_by_chars, email: Faker::Internet.email, age: rand(0..99), city_id: City.all.sample.id)
 end
 
 #creation des villes
@@ -19,10 +19,15 @@ end
 
 #creation des gossips
 20.times do
-	Gossip.create(title: Faker::Book.title, content: Faker::Lorem.paragraph_by_chars)
+	Gossip.create(title: Faker::Book.title, content: Faker::Lorem.paragraph_by_chars, user_id: User.all.sample.id)
 end
 
 #creation des tags
 10.times do
 	Tag.create(title: Faker::Book.title)
+end
+
+#relation entre tag et gossip
+20.times do
+	JoinTableTagGossip.create(tag_id: Tag.all.sample.id, gossip_id: Gossip.all.sample.id)
 end
