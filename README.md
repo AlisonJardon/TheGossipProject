@@ -1,24 +1,7 @@
-# README
+Hello !
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Alors pour cet exercice, je ne suis pas allée jusqu'au bout.
+J'ai créé mes classes (jusqu'à PrivateMessage, sauf qu'il n'est pas renseigné dans le seed)
+Les différentes tables jusqu'à la JoinTableTagGossip sont renseignées dans le seed.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+On pourra en parler au téléphone :)
